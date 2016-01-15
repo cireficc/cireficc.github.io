@@ -1,29 +1,29 @@
-title:            Notepad
-description:      "Blogging is fun"
-logo:             logo.png
-disqus_shortname: hmfaysal
+title:            Computing, linguistics, music, and everything in between
+description:      "Chris Cirefice's blog"
+logo:             Logo.jpg
+disqus_shortname: chriscirefice
 share:            true
-dropcap:			true
+dropcap:			    true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-#url:        	    https://my-blog-cireficc.c9users.io
-url:              http://cireficc.github.io
+url:        	    https://my-blog-cireficc.c9users.io
+#url:              http://cireficc.github.io
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
-  avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  name:           Christopher S. Cirefice
+  avatar:         Avatar.jpg
+  email:          cireficc@mail.gvsu.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Computer Science, French, Japanese, Linguistics, Music, Tennis, Cooking
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal      
-  instagram:      hmfaysal
+  twitter:        
+  facebook:       chris.cirefice
+  github:         cireficc
+  instagram:      
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    https://plus.google.com/+ChristopherCirefice
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-39365944-7
@@ -46,7 +46,7 @@ links:
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Dhaka
+timezone:    America/Detroit
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -72,8 +72,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  siteurl: 'http://hmfaysal.github.io/blog/'
+  relativeLinks: 'http://hmfaysal.github.io/blog/links.jsonp'
   media: 'images'
   metadata:
     _posts:
@@ -116,16 +116,24 @@ prose:
           options:
             - name: "Personal"
               value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
+            - name: "Computer Science"
+              value: computerscience
+            - name: "Language"
+              value: language
+            - name: "French"
+              value: french
+            - name: "Japanese"
+              value: japanese
+            - name: "Linguistics"
+              value: linguistics
+            - name: "Music"
+              value: music
+            - name: "Tennis"
+              value: tennis
+            - name: "Cooking"
+              value: cooking
+            - name: "Gaming"
+              value: gaming
           alterable: true
       - name: "tags"
         field:
