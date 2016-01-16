@@ -1,7 +1,7 @@
 title:            Computing, linguistics, music, and everything in between
 description:      "Chris Cirefice's blog"
-logo:             Logo.jpg
-disqus_shortname: chriscirefice
+logo:             logo.jpg
+disqus_shortname: cireficeblog
 share:            true
 dropcap:			    true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -13,7 +13,7 @@ url:        	    http://my-blog-cireficc.c9users.io
 # Owner/author information
 owner:
   name:           Christopher S. Cirefice
-  avatar:         Avatar.jpg
+  avatar:         avatar.jpg
   email:          cireficc@mail.gvsu.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Computer Science, French, Japanese, Linguistics, Music, Tennis, Cooking
@@ -24,9 +24,10 @@ owner:
   instagram:      
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/+ChristopherCirefice
+  linkedin:       chriscirefice
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
