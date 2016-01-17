@@ -2,7 +2,7 @@
 layout: post
 title: "Why I'm Starting a Blog"
 description: "Rationale as to why I'm starting a blog"
-modified: "Fri Jan 16 2016 19:53:00 GMT-0500 (Eastern Standard Time)"
+modified: "Sat Jan 16 2016 19:53:00 GMT-0500 (Eastern Standard Time)"
 category: personal
 comments: true
 published: true
