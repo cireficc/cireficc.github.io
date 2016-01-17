@@ -7,6 +7,8 @@ dropcap:			    true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+# If making local changes using Cloud9, make sure that the c9users URL is active.
+# When publishing final changes, ensure that the cirefice.me URL is active.
 #url:        	    https://my-blog-cireficc.c9users.io
 url:              http://cirefice.me
 
