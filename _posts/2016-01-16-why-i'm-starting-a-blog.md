@@ -11,8 +11,6 @@ categories:
 featured: true
 ---
 
-
-
 In my last 5 years of higher education, I haven't done very much to document my work, how I solved problems, or just
 have a place to talk about things that I care about. I have also come to realize that I have very little web presence
 aside from my Linkedin profile and some activity on sites such as [Stack Exchange](http://stackexchange.com/users/2255622/chris-cirefice).
