@@ -1,0 +1,42 @@
+/*
+    Code blocks formatting + highlighting helper.
+    Wrap code correctly and generate unselectable line numbers
+    if the linanchors option is present in Liquid tags.
+*/
+
+.highlight pre {
+    word-wrap: normal;
+    counter-reset: line-numbering;
+    border: solid 1px #d9d9d9;
+    border-radius: 0;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+.highlight pre code {
+    white-space: pre;
+}
+.highlight pre a {
+  cursor: default !important; /* Links have default cursor */
+}
+.highlight pre :not(a) {
+  cursor: text !important; /* Code has text cursor */
+}
+.highlight pre a::before {
+  content: counter(line-numbering);
+  counter-increment: line-numbering;
+  padding-right: 1em; /* space after numbers */
+  width: 45px; /* Width of line anchors */
+  text-align: right;
+  display: inline-block;
+  color: #FFFFFF; /* Line number */
+  background: #476580; /* Line number background*/
+  margin-right: 16px;
+  padding: 4px 10px;
+  font-size: 13px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
