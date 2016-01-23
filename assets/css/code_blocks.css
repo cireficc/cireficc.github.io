@@ -8,8 +8,6 @@
 .highlight pre {
     word-wrap: normal;
     counter-reset: line-numbering;
-    border: solid 1px #d9d9d9;
-    border-radius: 0;
     line-height: 23px;
     margin-bottom: 30px;
 }
@@ -25,7 +23,6 @@
 .highlight pre a::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
-  padding-right: 1em; /* space after numbers */
   width: 45px; /* Width of line anchors */
   text-align: right;
   display: inline-block;
