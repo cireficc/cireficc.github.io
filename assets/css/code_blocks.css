@@ -1,7 +1,8 @@
 /*
     Code blocks formatting + highlighting helper.
-    Wrap code correctly and generate unselectable line numbers
-    if the linanchors option is present in Liquid tags.
+    Wrap code correctly, generate unselectable line numbers
+    if the linanchors option is present in Liquid tags, and
+    change select colors when highlighting code.
 */
 
 .highlight pre {
@@ -39,4 +40,12 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.highlight ::selection {
+  background: #000000;
+  color: #FFFFFF;
+}
+.highlight ::-moz-selection {
+  background: #000000;
+  color: #FFFFFF;
 }
