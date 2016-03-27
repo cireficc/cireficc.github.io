@@ -5,23 +5,23 @@
     change select colors when highlighting code.
 */
 
-.highlight pre {
+.highlighter-rouge pre {
     word-wrap: normal;
     counter-reset: line-numbering;
     line-height: 23px;
     margin-bottom: 30px;
     overflow-y: hidden;
 }
-.highlight pre code {
+.highlighter-rouge pre code {
     white-space: pre;
 }
-.highlight pre a {
+.highlighter-rouge pre a {
   cursor: default !important; /* Links have default cursor */
 }
-.highlight pre :not(a) {
+.highlighter-rouge pre :not(a) {
   cursor: text !important; /* Code has text cursor */
 }
-.highlight pre a::before {
+.highlighter-rouge pre a::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
   width: 45px; /* Width of line anchors */
@@ -39,11 +39,11 @@
   -ms-user-select: none;
   user-select: none;
 }
-.highlight ::selection {
+.highlighter-rouge ::selection {
   background: #000000;
   color: #FFFFFF;
 }
-.highlight ::-moz-selection {
+.highlighter-rouge ::-moz-selection {
   background: #000000;
   color: #FFFFFF;
 }
