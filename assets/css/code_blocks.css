@@ -12,6 +12,7 @@
     margin-bottom: 30px;
     overflow-y: hidden;
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 .highlighter-rouge pre code {
     white-space: pre;
