@@ -58,7 +58,7 @@ and then immediately head over to the [Google developer console](https://console
 
 - **Create service account** - click the pretty blue button!
 	- Name your service account whatever you want (e.g. *api-service*)
-	- Check the box for *Furnish a new private key, and make the key type JSON
+	- Check the box for *Furnish a new private key*, and make the key type JSON
 	- Click *Create*
 
 	![Download]({{ site.url }}/images/integrating-rails-with-google-apis/create-service-account.png)
@@ -139,6 +139,7 @@ Running the above script should output **No access to any calendar!**. The servi
 The output should now display any calendar that the service account can access, e.g. **CAL: Google API Test Calendar**. Now we can create an event. Add the following code to the previous script:
 
 {% highlight ruby lineanchors %}
+# Create a new hour-long event that takes place an hour from now
 MINUTES_PER_DAY = 60 * 24
 date_start = DateTime.now + Rational(60, MINUTES_PER_DAY)
 date_end = date_start + Rational(60, MINUTES_PER_DAY)
@@ -166,6 +167,7 @@ puts "Event created: #{result.to_yaml}"
 You should see the event created in the calendar for an hour from when you ran the script, lasting an hour. Finally, let's get a list of upcoming events:
 
 {% highlight ruby lineanchors %}
+# List the next 10 upcoming events
 response = @calendar.list_events(GoogleCalendarHelper::CALENDAR_ID,
                               max_results: 10,
                               single_events: true,
@@ -188,8 +190,8 @@ Other Google APIs, such as Mail, can be integrated easily - this is all Ruby, so
  - [Calendar API Reference](https://developers.google.com/google-apps/calendar/v3/reference)
  - [Calendar API Rdoc](http://www.rubydoc.info/github/google/google-api-ruby-client/Google/Apis/CalendarV3)
  - [Calendar API Explorer](https://developers.google.com/apis-explorer/?hl=en_US#p/calendar/v3)
- - [Progress bars in Rails](https://infinum.co/the-capsized-eight/articles/progress-bar-in-rails) - particularly useful if you'll have long-running API tasks and don't want to leave users in the dark about progress
  - [Batch API requests](https://developers.google.com/google-apps/calendar/batch) - do requests in batches to speed up response time
+ - [Progress bars in Rails](https://infinum.co/the-capsized-eight/articles/progress-bar-in-rails) - particularly useful if you'll have long-running API tasks and don't want to leave users in the dark about progress
 
 *[MLL]: Modern Languages and Literatures
 *[GVSU]: Grand Valley State University
