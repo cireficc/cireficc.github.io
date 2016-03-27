@@ -11,6 +11,7 @@
     line-height: 23px;
     margin-bottom: 30px;
     overflow-y: hidden;
+    padding-left: 10px;
 }
 .highlighter-rouge pre code {
     white-space: pre;
