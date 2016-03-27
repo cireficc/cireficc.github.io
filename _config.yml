@@ -53,7 +53,6 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Detroit
 future:      true
-highlighter: pygments
 markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
@@ -66,6 +65,10 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  input: GFM
+  syntax_highlighter: rouge
+
+gems: [jekyll-paginate]
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
