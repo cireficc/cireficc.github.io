@@ -1,6 +1,10 @@
 #What is this?
 This is the repository for [my personal blog](http://cireficc.github.io).
 
+#How to run on Cloud9
+
+`bundle exec jekyll serve --host $IP --port $PORT`
+
 #Author
 My name is Christopher Cirefice, a Computer Science student at Grand Valley State University.
 
