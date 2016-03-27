@@ -3,7 +3,6 @@ layout: post
 title: "Integrating Rails With Google APIs"
 description: "Using a single Google account to access APIs to create calendar events for your users, send them mail, etc, without getting their permission."
 modified: "Sat Jan 16 2016 19:53:00 GMT-0500 (Eastern Standard Time)"
-category: personal
 comments: true
 published: true
 categories: 
