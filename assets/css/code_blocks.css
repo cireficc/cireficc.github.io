@@ -10,6 +10,7 @@
     counter-reset: line-numbering;
     line-height: 23px;
     margin-bottom: 30px;
+    overflow-y: hidden;
 }
 .highlight pre code {
     white-space: pre;
