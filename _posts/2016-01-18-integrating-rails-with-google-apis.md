@@ -41,21 +41,21 @@ e.g. calendars, mail, drive storage, etc, and perform actions on behalf of your 
 but without needing direct access to *their* Google account/data. You can simply [create a Google account](https://accounts.google.com/signUp),
 and then immediately head over to the [Google developer console](https://console.developers.google.com/project), and follow the steps below.
 
-- **Create a project** - give it any name that you want (e.g. *api-test*).
+1. **Create a project** - give it any name that you want (e.g. *api-test*).
 
 	![Create project]({{ site.url }}/images/integrating-rails-with-google-apis/create-project.png)
 
-- **Use Google APIs** - click the link to *enable and manage APIs*.
+2. **Use Google APIs** - click the link to *enable and manage APIs*.
 	- Some APIs are enabled by default, but let's enable Calendar and Mail.
 
-- Under the section Google Apps APIs, click and **enable Calendar and Mail**.
+3. Under the section Google Apps APIs, click and **enable Calendar and Mail**.
 	- You will be prompted to *Go to credentials* in order to generate your API keys. Finish enabling both APIs, then click *go to credentials*.
 
 		![Download]({{ site.url }}/images/integrating-rails-with-google-apis/go-to-credentials.png)
 
 	- On this screen you will see a link to [service account](https://console.developers.google.com/permissions/serviceaccounts). Go ahead and click it.
 
-- **Create service account** - click the pretty blue button!
+4. **Create service account** - click the pretty blue button!
 	- Name your service account whatever you want (e.g. *api-service*)
 	- Check the box for *Furnish a new private key*, and make the key type JSON
 	- Click *Create*
@@ -82,7 +82,8 @@ A JSON file was just downloaded to your computer; you will use this when connect
 
 We're going to test out the Ruby API client in the next few steps.
 
-- Install the Ruby Google API client with `gem install google-api-client`, or if you prefer in a Gemfile, `gem 'google-api-client', '~> 0.9.1'`.
+{:start="5"}
+5. Install the Ruby Google API client with `gem install google-api-client`, or if you prefer in a Gemfile, `gem 'google-api-client', '~> 0.9.1'`.
 
 Let's get a quick script set up to list the calendars our service account has access to. The first thing we should do is create a helper class to handle authorization, API scoping and API variables. This allows for a more centralized access point to the Calendar API.
 
@@ -106,7 +107,8 @@ class GoogleCalendarHelper
 end
 ```
 
-Create a Google Calendar and update `CALENDAR_ID` to the appropriate value; the calendar's id can be found through *Calendar settings*. Now we can write a script to test the API.
+{:start="6"}
+6. Create a Google Calendar and update `CALENDAR_ID` to the appropriate value; the calendar's id can be found through *Calendar settings*. Now we can write a script to test the API.
 
 ```ruby
 require_relative 'google_calendar_helper'

@@ -30,26 +30,26 @@ L’itération précédente de cette application web utilisait [Google Apps Scri
 
 Un [compte de service](https://developers.google.com/identity/protocols/OAuth2ServiceAccount) Google servira comme contrôleur de données, par exemple, les agendas, les e-mails, le stockage des données, etc., et agira de la part de vos utilisateurs (par exemple, en créant des événements sur Google Calendar pour eux, ou leur envoyant des e-mails), mais tout sans avoir besoin d’accès direct ni à leur compte Google, ni à leurs données. Vous pouvez simplement [créer un compte Google](https://accounts.google.com/signUp), et puis aller au [Google Developer Console](https://console.developers.google.com/project), et suivre les étapes comme décrits ci-dessous.
 
-- **Créer un projet** – donnez-le n’importe quel nom que vous voulez (par exemple, *test-api*)
+1. **Créer un projet** – donnez-le n’importe quel nom que vous voulez (par exemple, *test-api*)
 
-	![Create project]({{ site.url }}/images/integrating-rails-with-google-apis-fr/create-project.png)
+	  ![Create project]({{ site.url }}/images/integrating-rails-with-google-apis-fr/create-project.png)
 
--	**Utiliser les API de Google** – cliquez le lien pour *activer et gérer les API*.
-	- Quelques API sont activées par défaut, mais activons Agenda et Mail
+2.	**Utiliser les API de Google** – cliquez le lien pour *activer et gérer les API*.
+	  - Quelques API sont activées par défaut, mais activons Agenda et Mail
 
-- Dans la section API Google Apps, **cliquez l’API Agenda et l’API Gmail pour les activer**
-	- Vous serez invité à *Accéder à « Identifiants »* pour créer vos clés d’API. Finissez d’activer les deux API, puis cliquez *accéder à « Identifiants »*.
+3. Dans la section API Google Apps, **cliquez l’API Agenda et l’API Gmail pour les activer**
+	  - Vous serez invité à *Accéder à « Identifiants »* pour créer vos clés d’API. Finissez d’activer les deux API, puis cliquez *accéder à « Identifiants »*.
 
-		![Download]({{ site.url }}/images/integrating-rails-with-google-apis-fr/go-to-credentials.png)
+		    ![Download]({{ site.url }}/images/integrating-rails-with-google-apis-fr/go-to-credentials.png)
+		
+    - Sur cet écran vous verrez un lien vers [compte de service](https://console.developers.google.com/permissions/serviceaccounts). Allez-y et cliquez-le.
 
-  - Sur cet écran vous verrez un lien vers [compte de service](https://console.developers.google.com/permissions/serviceaccounts). Allez-y et cliquez-le.
+4.	**Créer un compte de service** – cliquez le beau bouton bleu !
+	  - Donnez n’importe quel nom que vous voulez à votre compte de service (par exemple, *service-api*)
+	  - Cochez la case *Indiquer une nouvelle clé privée*, et faites le type de clé celui de JSON.
+	  - Cliquez *Créer*
 
--	**Créer un compte de service** – cliquez le beau bouton bleu !
-	- Donnez n’importe quel nom que vous voulez à votre compte de service (par exemple, *service-api*)
-	- Cochez la case *Indiquer une nouvelle clé privée*, et faites le type de clé celui de JSON.
-	- Cliquez *Créer*
-
-	![Download]({{ site.url }}/images/integrating-rails-with-google-apis-fr/create-service-account.png)
+	  ![Download]({{ site.url }}/images/integrating-rails-with-google-apis-fr/create-service-account.png)
 
 Un fichier JSON vient d’être téléchargé sur votre ordinateur ; vous l’utilisez quand vous vous connectez aux divers clients d’API de Google. Ça devrait ressembler à quelque chose comme ça :
 
@@ -71,7 +71,8 @@ Un fichier JSON vient d’être téléchargé sur votre ordinateur ; vous l’ut
 
 Nous allons maintenant tester l’API côté client de Ruby dans les étapes suivantes.
 
-- Installez l’API côté client Ruby de Google avec `gem install google-api-client`, ou si vous préférez dans un Gemfile, `gem 'google-api-client', '~> 0.9.1'`.
+{:start="5"}
+5. Installez l’API côté client Ruby de Google avec `gem install google-api-client`, ou si vous préférez dans un Gemfile, `gem 'google-api-client', '~> 0.9.1'`.
 
 Mettons en place un script bref pour énumérer les agendas auxquels notre compte de service a accès. La première chose que nous devrions faire est de créer une classe d’aide pour s’occuper de l’autorisation, de l’étendue et des variables de l’API. Cela permet un point d’accès à l’API Agenda plus centralisé.
 
@@ -95,7 +96,8 @@ class GoogleCalendarHelper
 end
 ```
 
-Créez un agenda et mettez à jour le `CALENDAR_ID` avec la valeur appropriée ; l’ID de l’agenda se trouve par *Paramètres de l’agenda*. Maintenant nous pouvons écrire un script pour tester l’API.
+{:start="6"}
+6. Créez un agenda et mettez à jour le `CALENDAR_ID` avec la valeur appropriée ; l’ID de l’agenda se trouve par *Paramètres de l’agenda*. Maintenant nous pouvons écrire un script pour tester l’API.
 
 ```ruby
 require_relative 'google_calendar_helper'
