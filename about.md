@@ -29,7 +29,7 @@ writing/playing music (singing, piano, guitar, ukelele, mandolin) as well as pla
 I plan to pursue a MS and PhD in computational linguistics, specifically in the area of generative grammars and syntax analysis,
 developing the capability of computers to interpret natural languages.
 
-I currently work two part-time jobs: the first is at the [Language Resource Center](http://marvin.mll.gvsu.edu/lrc) (GVSU),
+I currently work two part-time jobs: the first is at the [Language Resource Center](https://www.gvsu.edu/lrc) (GVSU),
 the other for a language application development company called [VidaLingua](http://vidalingua.com) where I develop a social
 phrase translation application [PhraseMates](http://www.phrasemates.com), as well as maintain a set of
 [Android bilingual dictionaries](http://www.vidalingua.com/android-dictionary). I use Ruby on Rails, Node.js, PostgreSQL and
