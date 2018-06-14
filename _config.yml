@@ -9,7 +9,7 @@ dropcap:			    true
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 # If making local changes using Cloud9, make sure that the c9users URL is active.
 # When publishing final changes, ensure that the cirefice.me URL is active.
-# url:        	    https://my-blog-cireficc.c9users.io
+#url:        	    http://localhost:3000
 url:              http://cirefice.me
 
 # Owner/author information

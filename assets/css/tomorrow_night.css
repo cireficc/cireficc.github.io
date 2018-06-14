@@ -1,7 +1,7 @@
 /* Modified from: https://github.com/MozMorris/tomorrow-pygments/blob/master/css/tomorrow_night.css */
 
 .highlighter-rouge .highlight { background-color: #1d1f21 }
-.highlighter-rouge  { color: #c5c8c6 }
+.highlighter-rouge  { color: #c5c8c6; margin: 0 auto 2em auto; max-width: 56.25rem; }
 .highlighter-rouge .c { color: #969896 } /* Comment */
 .highlighter-rouge .err { color: #cc6666 } /* Error */
 .highlighter-rouge .k { color: #b294bb } /* Keyword */
