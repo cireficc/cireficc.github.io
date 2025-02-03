@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring HTML and CSS</title>
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="css/image_gallery.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Exploring HTML and CSS</h1>
+</div>
+
+<div class="content">
+    <h2>Nesting and Basic Tags</h2>
+    <p>Here is a simple example of how to use basic HTML tags. You can nest tags within one another to create structured documents.</p>
+    <ul>
+        <li><strong>Item 1:</strong> Description of item 1.</li>
+        <li><strong>Item 2:</strong> Description of item 2.
+            <ul>
+                <li><em>Subitem 2a</em>: Details about subitem 2a.</li>
+                <li><em>Subitem 2b</em>: Details about subitem 2b.</li>
+            </ul>
+        </li>
+        <li><strong>Item 3:</strong> Description of item 3.</li>
+    </ul>
+
+    <h2>div vs. span</h2>
+    <p><span style="color: red;">Span</span> is an inline element, while &ltdiv&gt is a block-level element.</p>
+
+    <h2>Creating Links</h2>
+    <p>Visit <a href="https://jsfiddle.net" class="link">JSFiddle</a> for more experimenting.</p>
+
+    <div class="image-gallery">
+        <div class="image-container">
+            <h3>Kismet original logo</h3>
+            <img src="images/kismet-logo.png" alt="Kismet logo" class="image">
+        </div>
+        <div class="image-container">
+            <h3>Kismet logo redesigned (light)</h3>
+            <img src="images/kismet-logo-light.png" alt="Kismet logo" class="image">
+        </div>
+        <div class="image-container">
+            <h3>Kismet logo redesigned (dark)</h3>
+            <img src="images/kismet-logo-dark.png" alt="Kismet logo" class="image">
+        </div>
+    </div>
+</div>
+</body>
+</html>
